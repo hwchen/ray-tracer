@@ -1,6 +1,6 @@
 extern crate ray_tracer;
 
-use ray_tracer::{Vec3, Point, Color};
+use ray_tracer::vec3::{Vec3, Point, Color};
 
 fn main() {
     let nx = 200;
