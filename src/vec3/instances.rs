@@ -12,10 +12,11 @@ use std::ops::{
 use super::Vec3;
 
 /// Color is an instance of Vec3
+#[derive(Debug, Clone)]
 pub struct Color {
-    r: f64,
-    g: f64,
-    b: f64,
+    pub r: f64,
+    pub g: f64,
+    pub b: f64,
 }
 
 impl Vec3 for Color {
@@ -47,10 +48,11 @@ impl Vec3 for Color {
 }
 
 /// Point is an instance of Vec3
+#[derive(Debug, Clone)]
 pub struct Point {
-    x: f64,
-    y: f64,
-    z: f64,
+    pub x: f64,
+    pub y: f64,
+    pub z: f64,
 }
 
 impl Vec3 for Point {
