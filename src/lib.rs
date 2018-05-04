@@ -72,6 +72,14 @@ pub trait Vec3 {
     fn to_ppm_tuple(&self) -> String {
         format!("{} {} {}", self.e0(), self.e1(), self.e2())
     }
+
+    fn to_ppm_tuple_int(&self) -> String {
+        format!("{} {} {}",
+            self.e0() as i64,
+            self.e1() as i64,
+            self.e2() as i64,
+        )
+    }
 }
 
 /// Point is an instance of Vec3
